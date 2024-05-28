@@ -1,0 +1,197 @@
+/* 
+------------------------
+        General    
+------------------------
+*/
+
+:root {
+    --col-main-blue: #01a6e8;
+    --col-main-blue-hover: #0993ca;
+    --col-main-dark-blue: #054c68;
+    --col-main-orange: #ffac14;
+    --col-main-orange-hover: #ec9800;
+    --col-main-orange-hover: #9d6600;
+    --col-white: #edeaea;
+    --col-black: #111111;
+    --col-dark-theme: #1a1a1a;
+    --col-light-grey: #d3d3d3;
+    --col-dark-grey: #aaa9a9;
+    --col-light-theme-main: #f4f4f6;
+    --col-light-theme-alt: #f3f3f7;
+}
+
+.container {
+    width: min(100% - 40px, 1280px);
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* 
+  --------------------
+    style stuff
+  --------------------
+  */
+
+  body
+  {
+    background-color: var(--col-dark-theme);
+    overflow: hidden;
+  }
+
+  .MoviePageTitle
+  {
+    color: var(--col-white);
+    font-size: 45px;
+  }
+
+  .MovieSubTitle
+  {
+    color: var(--col-dark-grey);
+    margin-bottom: 35px;
+  }
+
+  .movieSearch
+  {
+    width: 450px;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 20px;
+    background-color: #2e2e2e;
+    color: var(--col-white);
+  }
+
+  .searchButton
+  {
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    margin-left: 15px;
+    background-color: var(--col-main-blue);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--col-light-grey);
+  }
+
+  .searchButton:hover 
+  {
+    background-color: var(--col-main-blue-hover);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .mainbox
+  {
+    margin-top: 90px;
+  }
+
+  .movieDescriptionBox
+  {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+    height: 500px;
+    margin-top: 35px;
+  }
+
+  .MovieImage
+  {
+    width: 325px;
+    height: 500px;
+    background-color: var(--col-dark-grey);
+    background: center center / cover no-repeat;
+    border-radius: 4px;
+    border: var(--col-dark-theme) solid 2px;
+  }
+
+  .Movie
+  {
+    width: 550px;
+    height: 500px;
+    padding: 0px 10px 0px 10px;
+    display: none;
+  }
+
+  .MovieInfo
+  {
+    width: 150px;
+    height: 25px;
+    display: flex;
+    margin: 5px 0px 5px 0px;
+  }
+
+  .Mgenre
+  {
+    margin-bottom: 5px;
+  }
+
+  .autocomplete
+  {
+    display: flex;
+    position: absolute;
+    width: 450px;
+    max-height: 200px;
+    height: auto;
+    overflow-y: auto;
+    background-color: #383838;
+    color: var(--col-light-grey);
+    display: none;
+    margin: 0px 115px 55px 0px;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    top: 270px;
+    left: 657px; 
+  }
+
+
+  /* 
+  ---------------------------
+        Text Styles
+  ---------------------------
+  */
+
+  .Wtext
+  {
+    color: var(--col-white);
+  }
+
+  .LightText
+  {
+    color: var(--col-light-grey);
+  }
+  
+
+  .MovieTitle
+  {
+    font-size: 30px;
+  }
+
+  .space
+  {
+    margin: 0px 5px 0px 5px;
+  }
+
+
+
+
+ 
